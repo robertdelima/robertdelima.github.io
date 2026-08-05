@@ -87,7 +87,8 @@
             gap: 14px;
         }
 
-        .btn-link {
+        /* Estilo idêntico para os dois botões azuis */
+        .btn-blue {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -98,34 +99,16 @@
             border-radius: 12px;
             font-weight: 600;
             font-size: 0.95rem;
-            transition: all 0.2s ease-in-out;
-        }
-
-        /* Botão Principal do Linktree */
-        .btn-linktree {
             background: linear-gradient(135deg, #00c6ff, #0072ff);
             color: #ffffff;
             box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+            transition: all 0.2s ease-in-out;
         }
 
-        .btn-linktree:hover {
+        .btn-blue:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 114, 255, 0.5);
             background: linear-gradient(135deg, #0072ff, #00c6ff);
-        }
-
-        /* Botão para Referência/Imagem do Robô */
-        .btn-robot-image {
-            background-color: #161b22;
-            color: #c9d1d9;
-            border: 1px solid #30363d;
-        }
-
-        .btn-robot-image:hover {
-            transform: translateY(-2px);
-            background-color: #21262d;
-            border-color: #00f2fe;
-            color: #00f2fe;
         }
 
         footer {
@@ -151,7 +134,7 @@
                 <path d="M25 45 L50 30 L75 45 L70 75 L50 85 L30 75 Z" fill="#161b22" stroke="#30363d" stroke-width="2"/>
                 <path d="M30 45 L50 35 L70 45 L65 52 L50 48 L35 52 Z" fill="#21262d"/>
                 
-                <!-- Placa Lateral Angular (Estilo Gundam) -->
+                <!-- Placa Lateral Angular -->
                 <polygon points="20,48 30,45 28,68 18,60" fill="#30363d"/>
                 <polygon points="80,48 70,45 72,68 82,60" fill="#30363d"/>
                 
@@ -164,15 +147,18 @@
         </div>
 
         <h1>Robert Leichtveis</h1>
-        <p class="bio">Projetos & Tecnologia</p>
+        <p class="bio">Sistemas & Tecnologia</p>
 
         <div class="links-container">
-            <!-- Botão Principal -->
-            <a href="https://linktr.ee/RobertLeichtveis" target="_blank" rel="noopener noreferrer" class="btn-link btn-linktree">
+            <!-- Botão Linktree -->
+            <a href="https://linktr.ee/RobertLeichtveis" target="_blank" rel="noopener noreferrer" class="btn-blue">
                 🌐 Acessar Linktree Oficial
             </a>
 
-   
+            <!-- Botão Google Sites -->
+            <a href="https://sites.google.com/view/robertdelima/in%C3%ADcio" target="_blank" rel="noopener noreferrer" class="btn-blue">
+                🖥️ Meu Site Oficial (Google Sites)
+            </a>
         </div>
 
         <footer>
