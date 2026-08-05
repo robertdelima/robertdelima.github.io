@@ -1,18 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<title>Redirecionando...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Leichtveis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
 
-<script>
-window.location.href = "https://sites.google.com/view/robertdelima/in%C3%ADcio";
-</script>
+        body {
+            background-color: #0d1117;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
 
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Avatar de Robô Mecha em SVG */
+        .mecha-avatar-container {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #1f293d 0%, #0d1117 100%);
+            border: 2px solid #00f2fe;
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .mecha-avatar-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.7);
+        }
+
+        .mecha-svg {
+            width: 75px;
+            height: 75px;
+        }
+
+        /* Animação do Visor do Robô */
+        .mecha-eye {
+            animation: pulse-eye 2s infinite alternate;
+        }
+
+        @keyframes pulse-eye {
+            0% { fill: #00f2fe; filter: drop-shadow(0 0 2px #00f2fe); }
+            100% { fill: #4facfe; filter: drop-shadow(0 0 8px #00f2fe); }
+        }
+
+        h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            color: #ffffff;
+        }
+
+        p.bio {
+            font-size: 0.9rem;
+            color: #8b949e;
+            margin-bottom: 24px;
+        }
+
+        .links-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Botão Principal do Linktree */
+        .btn-linktree {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+        }
+
+        .btn-linktree:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 114, 255, 0.5);
+            background: linear-gradient(135deg, #0072ff, #00c6ff);
+        }
+
+        /* Botão para Referência/Imagem do Robô */
+        .btn-robot-image {
+            background-color: #161b22;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+        }
+
+        .btn-robot-image:hover {
+            transform: translateY(-2px);
+            background-color: #21262d;
+            border-color: #00f2fe;
+            color: #00f2fe;
+        }
+
+        footer {
+            margin-top: 32px;
+            font-size: 0.8rem;
+            color: #484f58;
+        }
+    </style>
 </head>
-
 <body>
 
-<p>Redirecionando...</p>
+    <div class="container">
+        
+        <!-- Avatar vetorial de Robô Mecha estilo Anime -->
+        <div class="mecha-avatar-container">
+            <svg class="mecha-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Chifres / Antenas Mecha -->
+                <polygon points="50,15 42,32 58,32" fill="#00f2fe"/>
+                <polygon points="20,25 35,40 28,45" fill="#30363d"/>
+                <polygon points="80,25 65,40 72,45" fill="#30363d"/>
+                
+                <!-- Capacete / Cabeça Principais -->
+                <path d="M25 45 L50 30 L75 45 L70 75 L50 85 L30 75 Z" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+                <path d="M30 45 L50 35 L70 45 L65 52 L50 48 L35 52 Z" fill="#21262d"/>
+                
+                <!-- Placa Lateral Angular (Estilo Gundam) -->
+                <polygon points="20,48 30,45 28,68 18,60" fill="#30363d"/>
+                <polygon points="80,48 70,45 72,68 82,60" fill="#30363d"/>
+                
+                <!-- Visor / Olhos de Robô Animação -->
+                <polygon class="mecha-eye" points="35,55 65,55 60,63 40,63" fill="#00f2fe"/>
+                
+                <!-- Protetor de Queixo -->
+                <polygon points="43,72 57,72 54,82 46,82" fill="#00f2fe"/>
+            </svg>
+        </div>
+
+        <h1>Robert Leichtveis</h1>
+        <p class="bio">Projetos & Tecnologia</p>
+
+        <div class="links-container">
+            <!-- Botão Principal -->
+            <a href="https://linktr.ee/RobertLeichtveis" target="_blank" rel="noopener noreferrer" class="btn-link btn-linktree">
+                🌐 Acessar Linktree Oficial
+            </a>
+
+   
+        </div>
+
+        <footer>
+            © Robert Leichtveis
+        </footer>
+    </div>
 
 </body>
 </html>
